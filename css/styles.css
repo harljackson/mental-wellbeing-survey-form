@@ -1,0 +1,88 @@
+html {
+    background-image: url("https://images.unsplash.com/photo-1656082263859-ab7cf2ece9fc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #444444;
+    font-family: Ubuntu, sans-serif;
+  }
+  
+  header {
+    background-color: rgba(255, 255, 255, 0.708);
+    color: #444444;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  h1 {
+    font-size: 60px;
+    font-family: Ubuntu, sans-serif;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.708);
+    text-shadow: 2px 2px 4px rgba(196, 196, 196, 0.5);
+  }
+  
+  #description {
+    background-color: rgba(255, 255, 255, 0.708);
+    font-size: 19px;
+    font-family: Ubuntu;
+  }
+  
+  .div {
+    border: none;
+  }
+  
+  form {
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(198, 198, 198);
+    background-color: #fffefeaa;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 23px;
+  }
+  
+  legend {
+    font-size: 17px;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  label {
+    font-size: 17px;
+    margin-top: 20px;
+  }
+  
+  input[type="text"], input[type="email"], textarea {
+      width: 90%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 18px;
+      box-sizing: border-box;
+  }
+  
+  #submit {
+    background-color: #5cd560;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  #submit:hover {
+    background-color: #55bb5b;
+  }
+  
+  

@@ -1,0 +1,190 @@
+<!-- meta data -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css\styles.css">
+  <link href="https://fonts.google.com/specimen/Ubuntu" rel="stylesheet">
+  <title>Mental Well-Being Survey Form</title>
+</head>
+<body>
+
+  <!-- heading of page -->
+  <header>
+    <h1 id="title">Mental Well-Being Survey Form</h1>
+    <p id="description">Your insights are invaluable in helping us understand and improve mental health services around the globe. ❤️</p>
+
+<div class="header-image">
+  <img src="https://static.vecteezy.com/system/resources/previews/018/878/977/original/earth-globe-cartoon-isolated-light-blue-background-world-map-earth-icon-clean-and-modern-illustration-for-design-web-vector.jpg" alt="globe-image" height="150" width="150">
+
+  </header>
+
+  <!-- main -->
+  <main>
+    <form action="/submit-survey" method="post" id="survey-form">
+
+      <!-- fieldset -->
+      <fieldset>
+        
+        <legend> Personal Information</legend> 
+      
+
+        <!-- name -->
+        <label id="name-label">Name</label>
+        <input id="name"  type="text" name="name" id="name-label" placeholder="enter your name..." required>
+
+        <!-- email -->
+        <label id="email-label">Email</label>
+        <input id="email" id="email-label" placeholder="enter your email..." type="email" name="email" required>
+
+        <!-- age -->
+        <label id="number-label">Age (optional)</label>
+        <input id="number" id="number-label" placeholder="age..."type="number" name="age" max="120" min="10">
+      
+
+    <!-- gender -->
+    <label for "gender">Gender (optional)</label>
+      <select id="dropdown" name="gender" title="select your gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="non-binary">Non-Binary</option>
+        <option value="other-gender">Other</option>
+      </select>
+      </fieldset>
+
+</fieldset>
+
+
+
+<fieldset>
+      <!-- stress question (radio button) -->
+      <h3 id="stress-heading">How Often Do You Feel Stressed?</h3>
+      <!-- never (option 1) -->
+      <input type="radio" id="stress-never" name="stress-level" type="radio" value="never">
+       <label for="stress-question">Never</label><br>
+
+       <!-- rarely (option 2) -->
+       <input type="radio" id="stress-rarely" name="stress-level" type="radio" value="rarely">
+       <label for="stress-question">Rarely</label><br>
+
+       <!-- sometimes (option 3) -->
+       <input type="radio" id="stress-sometimes" name="stress-level" type="radio" value="sometimes">
+       <label for="stress-question">Sometimes</label><br>
+
+       <!-- often (option 4) -->
+       <input type="radio" id="stress-often" name="stress-level" type="radio" value="often">
+       <label for="stress-question">Often</label><br>
+
+       <!-- always (option 5) -->
+       <input type="radio" id="stress-always" name="stress-level" type="radio" value="always">
+       <label for="stress-question">Always</label><br>
+
+</fieldset>
+
+       
+<fieldset>
+       <!-- work-life balance question (radio button) -->
+      <h3 id="work-life-heading">How Satisfied Are You Currently With Your Work-Life Balance?</h3>
+
+
+      <!-- very satisfied (option 1) -->
+      <input type="radio" id="work-very-satisfied" name="work-life-balance" type="radio" value="very-satisfied">
+       <label for="work-very-satisfied">Very Satisfied</label><br>
+
+        <!-- satisfied (option 2) -->
+      <input type="radio" id="work-satisfied" name="work-life-balance" type="radio" value="satisfied">
+       <label for="work-satisfied">Satisfied</label><br>
+
+        <!-- neutral (option 3) -->
+      <input type="radio" id="work-neutral" name="work-life-balance" type="radio" value="neutral">
+       <label for="work-neutral">Neutral</label><br>
+
+        <!-- dissatisfied (option 4) -->
+      <input type="radio" id="work-dissatisfied" name="work-life-balance" type="radio" value="dissatisfied">
+       <label for="work-dissatisfied">Dissatisfied</label><br>
+
+       <!-- very dissatisfied (option 5) -->
+      <input type="radio" id="work-very-dissatisfied" name="work-life-balance" type="radio" value="very-dissatisfied">
+       <label for="work-very-dissatisfied">Very Dissatisfied</label><br>
+
+</fieldset>
+
+
+<fieldset>
+
+  <!-- checkboxes questions --> 
+  <h3 id="checkbox-relax">Which of The Following Activities Helps You Relax? (Please check all that apply) </h3>
+
+  <!-- reading (option 1) -->
+  <input type="checkbox" id="relax-reading" name="relaxation-method" type="checkbox" value="reading">
+  <label for="relax-reading">Reading</label><br>
+
+  <!-- exercise (option 2) -->
+  <input type="checkbox" id="relax-exercise" name="relaxation-method" type="checkbox" value="exercise">
+  <label for="relax-exercise">Exercise</label><br>
+
+  <!-- meditation (option 3) -->
+  <input type="checkbox" id="relax-meditation" name="relaxation-method" type="checkbox" value="meditation">
+  <label for="relax-meditation">Meditation</label><br>
+
+  <!-- music (option 4) -->
+  <input type="checkbox" id="relax-music" name="relaxation-method" type="checkbox" value="music">
+  <label for="relax-music">Music</label><br>
+
+  <!-- nature (option 5) -->
+  <input type="checkbox" id="relax-nature" name="relaxation-method" type="checkbox" value="nature">
+  <label for="relax-nature">Nature</label><br>
+
+  <!-- friends (option 6) -->
+  <input type="checkbox" id="relax-friends" name="relaxation-method" type="checkbox" value="friends">
+  <label for="relax-reading">Friends & Family</label><br>
+
+  </fieldset>
+
+  <!-- second checkbox question -->
+
+<fieldset>
+
+  <h3 id="checkbox-symptoms">Which of The Following Symptoms Do You Experince When You Are Feeling Stressed? (Please check all that apply)</h3>
+
+  <!-- insomnia (option 1) -->
+  <input type="checkbox" id="symptoms-insomnia" name="stress-symptom" type="checkbox" value="insomnia">
+  <label for="symptoms-insomnia">Insomnia</label><br>
+
+  <!-- headaches (option 2) -->
+  <input type="checkbox" id="symptoms-headache" name="stress-symptom" type="checkbox" value="headache">
+  <label for="symptoms-headache">Headache</label><br>
+
+  <!-- anxiety (option 3) -->
+  <input type="checkbox" id="symptoms-anxiety" name="stress-symptom" type="checkbox" value="anxiety">
+  <label for="symptoms-anxiety">Anxiety</label><br>
+
+  <!-- depression (option 4) -->
+  <input type="checkbox" id="symptoms-depression" name="stress-symptom" type="checkbox" value="depression">
+  <label for="symptoms-depression">Depression</label><br>
+
+  <!-- changes in appetite (option 5) -->
+  <input type="checkbox" id="symptoms-appetite" name="stress-symptom" type="checkbox" value="appetite">
+  <label for="symptoms-appetite">Appetite</label><br>
+
+  <!-- irritability (option 6) -->
+  <input type="checkbox" id="symptoms-irritability" name="stress-symptom" type="checkbox" value="irritability">
+  <label for="symptoms-irritability">Irritability</label><br>
+  
+</fieldset>
+
+<fieldset>
+
+  <!-- text area section -->
+  <h3 id="stress-experience-heading">Think About The Last Time You Was Stressed Due To a Particular Event or Experience, How Did You Approach and Handle The Situation?</h3>
+
+  <label for="stress-experience">Your Response Goes Here</label><br>
+  <textarea id="stress-experience" name="stress-experience" rows="6" cols="40" placeholder="type your experience here..."></textarea><br>
+
+  <input type="submit" value="Submit" id="submit">
+  
+    </form>
+  </main>
+</body>
+</html>
